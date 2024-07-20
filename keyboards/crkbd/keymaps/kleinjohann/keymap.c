@@ -177,3 +177,17 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     }
     return true;
 };
+
+bool process_detected_host_os_kb(os_variant_t detected_os) {
+    if (!process_detected_host_os_user(detected_os)) {
+        return false;
+    }
+    keymap_config.raw = eeconfig_read_keymap();
+    if (detected_os == OS_WINDOWS) {
+        keymap_config.swap_lalt_lgui = true;
+    } else {
+        keymap_config.swap_lalt_lgui = false;
+    }
+    eeconfig_update_keymap(keymap_config.raw);
+    return true;
+}
