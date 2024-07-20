@@ -31,10 +31,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //#define QUICK_TAP_TERM 0
 //#define TAPPING_TERM 100
 
-#define LSPO_KEYS KC_LSFT, KC_TRNS, KC_SPC
-#define RSPC_KEYS KC_RSFT, KC_TRNS, KC_SPC
-#define LAPO_KEYS KC_LALT, KC_TRNS, KC_ESC
-
 // Keycodes for umlauts and eszett
 #define UML_AE RALT(KC_Q)
 #define UML_OE RALT(KC_P)
@@ -44,5 +40,5 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define GB_PND SAGR(KC_4)
 #define SI_MU  RALT(KC_M)
 
-#define COMBO_COUNT 21
+#define COMBO_COUNT 36
 
