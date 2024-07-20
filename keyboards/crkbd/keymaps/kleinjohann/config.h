@@ -44,5 +44,5 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define GB_PND SAGR(KC_4)
 #define SI_MU  RALT(KC_M)
 
-#define COMBO_COUNT 14
+#define COMBO_COUNT 21
 

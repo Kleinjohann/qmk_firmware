@@ -83,10 +83,17 @@ enum combos {
     H_J_RBRC,
     J_K_ENT,
     K_L_ENT,
+    NUMJ_K_ENT,
+    NUMK_L_ENT,
     V_B_LCBR,
     M_N_RCBR,
     COMM_DOT_QUOT,
+    U_I_BSPC,
     I_O_BSPC,
+    NUM7_8_BSPC,
+    NUM8_9_BSPC,
+    O_P_DEL,
+    NUM9_0_DEL,
 
 };
 
@@ -100,10 +107,17 @@ const uint16_t PROGMEM f_g_lbrc[]      = {KC_F, KC_G, COMBO_END};
 const uint16_t PROGMEM h_j_rbrc[]      = {KC_H, KC_J, COMBO_END};
 const uint16_t PROGMEM j_k_ent[]       = {KC_J, KC_K, COMBO_END};
 const uint16_t PROGMEM k_l_ent[]       = {KC_K, KC_L, COMBO_END};
+const uint16_t PROGMEM numj_k_ent[]    = {KC_DOWN, KC_UP, COMBO_END};
+const uint16_t PROGMEM numk_l_ent[]    = {KC_UP, KC_RIGHT, COMBO_END};
 const uint16_t PROGMEM v_b_lcbr[]      = {KC_V, KC_B, COMBO_END};
 const uint16_t PROGMEM m_n_rcbr[]      = {KC_M, KC_N, COMBO_END};
 const uint16_t PROGMEM comm_dot_quot[] = {KC_COMM, KC_DOT, COMBO_END};
+const uint16_t PROGMEM u_i_bspc[]      = {KC_U, KC_I, COMBO_END};
 const uint16_t PROGMEM i_o_bspc[]      = {KC_I, KC_O, COMBO_END};
+const uint16_t PROGMEM num7_8_bspc[]   = {KC_7, KC_8, COMBO_END};
+const uint16_t PROGMEM num8_9_bspc[]   = {KC_8, KC_9, COMBO_END};
+const uint16_t PROGMEM o_p_del[]       = {KC_O, KC_P, COMBO_END};
+const uint16_t PROGMEM num9_0_del[]    = {KC_9, KC_0, COMBO_END};
 
 combo_t key_combos[COMBO_COUNT] = {
   [W_E_ESC] = COMBO(w_e_esc, KC_ESC),
@@ -116,10 +130,17 @@ combo_t key_combos[COMBO_COUNT] = {
   [H_J_RBRC] = COMBO(h_j_rbrc, KC_RBRC),
   [J_K_ENT] = COMBO(j_k_ent, KC_ENT),
   [K_L_ENT] = COMBO(k_l_ent, KC_ENT),
+  [NUMJ_K_ENT] = COMBO(numj_k_ent, KC_ENT),
+  [NUMK_L_ENT] = COMBO(numk_l_ent, KC_ENT),
   [V_B_LCBR] = COMBO(v_b_lcbr, KC_LCBR),
   [M_N_RCBR] = COMBO(m_n_rcbr, KC_RCBR),
   [COMM_DOT_QUOT] = COMBO(comm_dot_quot, MC_QUOT),
+  [U_I_BSPC] = COMBO(u_i_bspc, KC_BSPC),
   [I_O_BSPC] = COMBO(i_o_bspc, KC_BSPC),
+  [NUM7_8_BSPC] = COMBO(num7_8_bspc, KC_BSPC),
+  [NUM8_9_BSPC] = COMBO(num8_9_bspc, KC_BSPC),
+  [O_P_DEL] = COMBO(o_p_del, KC_DEL),
+  [NUM9_0_DEL] = COMBO(num9_0_del, KC_DEL),
 
 };
 
